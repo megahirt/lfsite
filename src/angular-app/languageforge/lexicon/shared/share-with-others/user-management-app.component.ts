@@ -47,6 +47,7 @@ export class UserManagementAppController implements angular.IController {
       const memberList: HTMLElement = document.getElementById('who-has-access');
       const gradient: HTMLElement = document.getElementById('scroll-gradient-lower');
       gradient.style.width = memberList.offsetWidth + 'px';
+      gradient.style.top = memberList.offsetTop + memberList.offsetHeight - gradient.offsetHeight + 'px';
     });
   }
 
